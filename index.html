@@ -1,9 +1,68 @@
+```html
+<!DOCTYPE html>
 <html>
 
+<head>
+  <title>CSC 426 - Open Source Software Engineering</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    h2 {
+      color: #555;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    img {
+      width: 200px;
+      margin: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
 <body>
-  <h1>Ayomide Oludairo</h1>
+
+  <h1>Ayomide Oludairo!</h1>
+  <h2>CSC 426: Open Source Software Engineering</h2>
+
   <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+  <p>This page was created for my Open Source Software Engineering class.</p>
+
+  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif">
+
+  <br>
+
+  <button onclick="changeMessage()">Click Me!</button>
+
+  <p id="message">Have a great day!</p>
+
+  <script>
+    function changeMessage() {
+      document.getElementById("message").innerHTML = "Thanks for visiting my website!";
+    }
+  </script>
+
 </body>
 
 </html>
+```
+

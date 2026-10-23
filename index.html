@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html>
 
@@ -36,6 +36,21 @@
       font-size: 16px;
       cursor: pointer;
     }
+
+    /* New styling for the blog link */
+    .blog-link {
+      display: inline-block;
+      margin: 20px;
+      padding: 12px 24px;
+      background-color: #234b70;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .blog-link:hover {
+      background-color: #18344e;
+    }
   </style>
 </head>
 
@@ -55,6 +70,12 @@
 
   <p id="message">Have a great day!</p>
 
+  <!-- New Blog Section -->
+  <h2>My Blog</h2>
+  <p>Read my reflections and updates from CSC 426!</p>
+
+  <a href="blog.html" class="blog-link">Visit My Blog</a>
+
   <script>
     function changeMessage() {
       document.getElementById("message").innerHTML = "Thanks for visiting my website!";
@@ -64,5 +85,3 @@
 </body>
 
 </html>
-```
-
